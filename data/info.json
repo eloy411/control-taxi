@@ -1,0 +1,55 @@
+{
+    "cliente": [
+        {
+            "title": "",
+            "texto": [
+                "Esta aplicación, No se ha hecho para hacer mal al sector del TAXI",
+                "Todo lo contrario, Control-Taxi es una herramienta que dignifica la profesión y ayuda a poner fin al dolor de cabeza de la mayoría de profesionales y usuarios",
+                "LA MALA PRAXIS"
+            ]
+        },
+        {
+            "title": "Condiciones de uso",
+            "texto": [
+                "No debes falsificar denuncias, no sirve de nada.",
+                "Todos tus datos están protegidos y solo se utilizarán en caso que el organo competente regulador del Taxi lo vea conveniente."
+            ]
+        },
+        {
+            "title": "Instrucciones de uso",
+            "texto": [
+                "Las denuncias se realizan de una, en una",
+                "Es obligatorio por lo menos licencia o matrícula",
+                "Puede agregar una imagen/video (No es obligatorio)",
+                "Seleccionar el motivo, si no sale en la lista escoja \"Otros\"",
+                "Es muy recomendable explicar lo sucedido "
+            ]
+        }
+    ],
+    "conductor": [
+        {
+            "title": "",
+            "texto": [
+                "Esta aplicación, No se ha hecho para hacer mal al sector del TAXI",
+                "Todo lo contrario, considero que es una herramienta que dignifica la profesión y ayuda a poner fin al dolor de cabeza de la mayoría de profesionales",
+                "LA MALA PRAXIS"
+            ]
+        },
+        {
+            "title": "Condiciones de uso",
+            "texto": [
+                "No debes falsificar denuncias, no sirve de nada",
+                "Todos tus datos están protegidos y solo se utilizarán en caso que el organo competente regulador del Taxi lo vea conveniente"
+            ]
+        },
+        {
+            "title": "Instrucciones de uso",
+            "texto": [
+                "Las denuncias se realizan de una, en una",
+                "Es obligatorio por lo menos licencia o matrícula",
+                "Puede agregar una imagen/video (No es obligatorio)",
+                "Es muy recomendable explicar lo sucedido "
+            ]
+        }
+    ]
+}

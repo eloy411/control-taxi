@@ -1,0 +1,23 @@
+{
+    "cliente":[
+        ["0.0","Escoge motivo"],
+        ["1.1","El vehículo está sucio"],
+        ["1.2","Vestimenta inapropiada"],
+        ["2.1","No quiere dar el recibo"],
+        ["2.2","Conducción temeraria"],
+        ["3.1","Me está cobrando de más"],
+        ["3.2","Esta pactando precio al alza"],
+        ["0.1","Otros"]
+    ],
+    "conductor":[
+        ["0.0","Escoge Motivo"],
+        ["1.1","El vehiculo está sucio"],
+        ["1.2","Vestimenta inapropiada"],
+        ["2.2","Conduccion temeraria"],
+        ["2.3","Encochar a menos de 50m de parada"],
+        ["3.2","Está pactando precio al alza"],
+        ["3.3","Está estafando a un cliente"],
+        ["3.4","Usando tarifa 3 sín identificación"],
+        ["0.1","Otros"]
+    ]
+}
