@@ -23,14 +23,14 @@ function Analisis() {
 
     const cargarDenuncias = async () => {
 
-        await fetch('https://controltaxieloy.herokuapp.com/api/web/admin/denuncias')
+        await fetch('https://control-taxi.onrender.com/api/web/admin/denuncias')
             .then(res => res.json())
             .then(response => setResponse(response))
 
 
     }
     const cargarDefinicionDenuncias = async () => {
-        await fetch('https://controltaxieloy.herokuapp.com/api/listadenuncias')
+        await fetch('https://control-taxi.onrender.com/api/listadenuncias')
             .then(res => res.json())
             .then(response => setDefinicionDenuncias(response))
     }

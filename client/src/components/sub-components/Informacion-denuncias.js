@@ -30,7 +30,7 @@ function InformacionDen(props) {
             body: JSON.stringify({ identificador: value })
         }
 
-        await fetch('https://controltaxieloy.herokuapp.com/api/web/admin/specific-denunciante', options)
+        await fetch('https://control-taxi.onrender.com/api/web/admin/specific-denunciante', options)
             .then(res => res.json())
             .then(response => setDenunciante(response))
 
