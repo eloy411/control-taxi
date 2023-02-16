@@ -13,7 +13,7 @@ function BlackList() {
 
     const cargarDenuncias = async () => {
 
-        await fetch('https://controltaxieloy.herokuapp.com/api/web/admin/denuncias')
+        await fetch('https://control-taxi.onrender.com/api/web/admin/denuncias')
             .then(res => res.json())
             .then(response => setResponse(response))
 
@@ -39,7 +39,7 @@ function BlackList() {
             headers: {"Content-type":"application/json"},
             body: JSON.stringify({identificador:value})
         }
-        await fetch('https://controltaxieloy.herokuapp.com/api/web/admin/specific-denunciados',requestOptions)
+        await fetch('https://control-taxi.onrender.com/api/web/admin/specific-denunciados',requestOptions)
         .then(res=>res.json())
         .then(response=>setDenunciado(response))
         
