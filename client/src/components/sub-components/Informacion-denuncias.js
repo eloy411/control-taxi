@@ -72,16 +72,16 @@ function InformacionDen(props) {
             <div className="pre-table">
                 <div className="table">
                     {props.data !== 'none' ?
-                        <table className="border" >
-                            <thead className="border">
-                                <th className="border">Fecha</th>
-                                <th className="border">Motivo</th>
-                                <th className="border">Imagen</th>
+                        <table className="" >
+                            <thead className="">
+                                <th className="cabecera">Fecha</th>
+                                <th className="cabecera">Motivo</th>
+                                <th className="cabecera">Imagen</th>
 
-                                <th className="border">Licencia/Matricula</th>
+                                <th className="cabecera">Licencia/Matricula</th>
 
 
-                                <th className="border padding-opciones">Opciones denuncia</th>
+                                <th className="cabecera padding-opciones">Opciones denuncia</th>
 
                             </thead>
                             {props.data.map(e =>
@@ -104,20 +104,20 @@ function InformacionDen(props) {
             </div>
             <div id='infotable' className={!fix?"table-info infotable":"table-info infotable-fixed"}>
                 <div className="descripcion">
-                    <h3>Descripción</h3>
-                    <p>{descripcion}</p>
+                    <h3 className="margin-denuncias">Descripción</h3>
+                    <p className="margin-denuncias">{descripcion}</p>
                 </div>
                 <div>
-                    <h3>Denunciante</h3>
+                    <h3 className="margin-denuncias">Denunciante</h3>
                     <ul>
-                    <li>{`Rol: ${denunciante.rol}`}</li>
-                        <li>{`Nombre: ${denunciante.nombre}`}</li>
-                        <li>{`Apellido: ${denunciante.apellido}`}</li>
-                        <li>{`Telefono: ${denunciante.telefono}`}</li>
-                        <li>{`Email: ${denunciante.email}`}</li>
-                        <li>{`Total denuncias sin imagen: ${denunciante.numDenuncias}`}</li>
-                        <li>{`Total denuncias con imagen: ${denunciante.numDenunciasImagen}`}</li>
-                        <li>{`Veracidad: ${denunciante.veracidad}`}</li>
+                    <li>Rol: <b>{denunciante.rol}</b></li>
+                        <li>Nombre: <b>{denunciante.nombre}</b></li>
+                        <li>Apellido: <b>{denunciante.apellido}</b></li>
+                        <li>Telefono: <b>{denunciante.telefono}</b></li>
+                        <li>Email: <b>{denunciante.email}</b></li>
+                        <li>Total denuncias sin imagen: <b>{denunciante.numDenuncias}</b></li>
+                        <li>Total denuncias con imagen: <b>{denunciante.numDenunciasImagen}</b></li>
+                        <li>Veracidad: <b>{denunciante.veracidad}</b></li>
                     </ul>
                 </div>
                 <div></div>

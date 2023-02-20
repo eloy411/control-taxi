@@ -53,9 +53,9 @@ function Navbar (){
             <div className='nav'>
             <div className='logo'><h1>Control Taxi</h1></div>
             <div className='pestanas'>
-            <div><button  onClick={()=>handlePage("black")} >Black List</button></div>
-            <div><button onClick={()=>handlePage("den")}>Denuncias</button></div>
-            <div><button onClick={()=>handlePage("ana")}>Análisis</button></div> 
+            <div><button className='button-32' onClick={()=>handlePage("black")} >Black List</button></div>
+            <div><button className='button-32' onClick={()=>handlePage("den")}>Denuncias</button></div>
+            <div><button className='button-32' onClick={()=>handlePage("ana")}>Análisis</button></div> 
             </div>
             </div>
             <div>{body}</div>        

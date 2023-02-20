@@ -133,7 +133,7 @@ function Analisis() {
         <div>
             <h1>Analisis</h1>
             <div>
-                <div className='contenedor-licencias-blacklist-select border'>
+                <div className='contenedor-licencias-blacklist-select '>
                     <div>
 
                         <input id='search' onChange={(event) => handleSearch(event.target.value)} type="text" placeholder='licencia/matrícula'></input>
@@ -146,7 +146,7 @@ function Analisis() {
                     </div>
                 </div>
                 <div className='contenedor-analisis'>
-                    <div className="contenedor-analisis-options border">
+                    <div className="contenedor-analisis-options">
                         <div>
                             <h3>Rol denunciantes</h3>
                             <div>
@@ -217,7 +217,7 @@ function Analisis() {
                             <button onClick={() => { click() }}>Aceptar</button>
                         </div>
                     </div>
-                    <div className="contenedor-analisis-graffics border">
+                    <div className="contenedor-analisis-graffics">
                         <Grafics data={info} type={checkType} />
                     </div>
                 </div>

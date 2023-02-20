@@ -7,6 +7,7 @@ const initialResponseParams = "none"
 function BlackList() {
     const [response, setResponse] = useState(initialResponseParams)
     const [numTop, setNumTop] = useState(10)
+    const [top,setTop] = useState('')
     const [choose,setChoose] = useState('licencias')
     const [search,setSearch] = useState('')
     const [denunciado,setDenunciado] = useState(initialResponseParams)
@@ -48,6 +49,8 @@ function BlackList() {
     const informacion = (event) =>{
         
         buscarDenunciados(event.parentElement.parentElement.childNodes[0].children[1].innerText)
+        const topnum = (event.parentElement.parentElement.childNodes[0].children[0].innerText).split('.').join('')
+        setTop(topnum)
     }
 
     if (response.denuncias && choose === 'licencias') {
@@ -90,31 +93,33 @@ function BlackList() {
     if (response.denuncias) {
         return (
             <div >
-                <h1 className='border'>Black List</h1>
-                <div className='contenedor-licencias-blacklist-select border'>
+                <h1 className='title'>Black List</h1>
+                <div className='contenedor-licencias-blacklist-select'>
                     <div>
                     <input id='search' onChange={(event)=>handleSearch(event.target.value)} type="text" placeholder='licencia/matrícula'></input>
-                    <button htmlFor='search' onClick={()=>buscarDenunciados(search)}>: Buscar</button>
+                    <button className='button-30' htmlFor='search' onClick={()=>buscarDenunciados(search)}>: Buscar</button>
                     </div>
                     <div>
                     <label htmlFor=''>Lista : </label>
-                    <button onClick={()=>{handleChoose('licencias')}}>Licencias</button>
-                    <button onClick={()=>{handleChoose('matriculas')}}>Matrículas</button>
+                    <button className='button-30' onClick={()=>{handleChoose('licencias')}}>Licencias</button>
+                    <button className='button-30' onClick={()=>{handleChoose('matriculas')}}>Matrículas</button>
                     </div>
                     <div>
                         <label htmlFor=''>Numero de Top</label>
-                        <select onChange={(event)=>{handleTopList(event.target.value)}}>
+                        <select className='select-30' onChange={(event)=>{handleTopList(event.target.value)}}>
                             <option>10</option>
                             <option>5</option>
                             <option>3</option>
                             <option>1</option>
                         </select>
                     </div>
+                    <div className='contenedor-licencias-blacklist-select-helper'></div>
                 </div>
+                <div className='parent-contenedor-blacklist'>
                 <div className='contenedor-blacklist'>
                 <div className='contenedor-licencias-blacklist'>
                         {blackL.map(e => <div className="licencia-display" key={e[0].toString() + 'blacklist'}>
-                        <div className="border licencia-display-sub">
+                        <div className=" licencia-display-sub">
                             <div className='licencia-display-sub-ranking '>
                                 <h3>{e[0].toString() + '.'}</h3>
                             </div>
@@ -122,15 +127,17 @@ function BlackList() {
                                 <p>{e[1]}</p>
                             </div>
                         </div>
-                            <div className='border licencia-display-button'>
-                                <button onClick={(event)=>informacion(event.target)}>Información</button>
+                            <div className='licencia-display-button'>
+                                <button className='button-31' onClick={(event)=>informacion(event.target)}>info</button>
+                                
                             </div>
 
                         </div>)}
                 </div>
-                    <div className='contenedor-info-blacklist border'>
-                        {<Informacion data={denunciado}/>}
+                    <div className='contenedor-info-blacklist '>
+                        {<Informacion data={{denunciado,top}}/>}
                     </div>
+                </div>
                 </div>
             </div>
         )
